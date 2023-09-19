@@ -1,20 +1,32 @@
 {
-  "name": "netlify",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "netlify-express",
+  "version": "0.0.1",
+  "description": "Example of how to deploy a Express.js Netlify app.",
+  "main": "functions/server.js",
   "scripts": {
-    "start": "netlify-lambda serve src",
-    "build": "netlify-lambda build src"
+    "build": "netlify-lambda build express",
+    "start": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@netlify/functions": "^2.0.2",
-    "@types/express": "^4.17.17",
-    "express": "^4.18.2",
-    "nodemon": "^3.0.1",
-    "serverless-http": "^3.2.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robinmind786/netlify-v1.git"
+  },
+  "keywords": [
+    "netlify",
+    "express.js"
+  ],
+  "author": "neverendingqs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/robinmind786/netlify-v1.git"
+  },
+  "homepage": "https://github.com/robinmind786/netlify-v1.git",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^1.19.2",
+    "serverless-http": "^2.3.0"
   }
 }
